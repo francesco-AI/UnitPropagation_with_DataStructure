@@ -147,6 +147,12 @@ class CNF_generator():
         else:
             return False
 
+
+    ##################################################################
+    # Previous methods are original for this project.
+    # Instead I've taken these following from StackOverflow
+    # to use this class also as a dictionary by Unit_propagation Class
+    ##################################################################
     def __setitem__(self, key, item):
         self.cnf_dict[key] = item
 
@@ -336,7 +342,7 @@ Unit_Propagation_with_DataStructure(cnf=cnf)
 print('')
 
 
-# A SCOPO DI TEST PER I METODI DELLA CLASSE CNF_generator
+# A SCOPO DI TEST PER I METODI CREATI DA ME NELLA CLASSE CNF_generator
 # if cnf.check_clause('C80'):
 #     print('clause C0:' , cnf.get_clause('C80'))
 # else:
